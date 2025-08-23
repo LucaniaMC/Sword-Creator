@@ -17,7 +17,7 @@ public class ScrollToScale : MonoBehaviour
         //Only works if the mouse is in the display region
         if (regionChecker != null && regionChecker.IsMouseOverRegion())
         {
-            float delta = Input.mouseScrollDelta.y * scaleRate;
+            float delta = Input.mouseScrollDelta.y * scaleRate; //the amount of scale difference each scroll
             if (!Mathf.Approximately(delta, 0f))
             {
                 // Only update the target when there's actual scroll input
